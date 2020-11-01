@@ -1,0 +1,196 @@
+header {
+    background-color: #7D8E90;
+    height: 134px;
+    display: flex;
+    flex-direction: row;
+}
+header li {
+    display: inline-block;
+    padding-right: 20px;
+}
+header ul {
+    padding-right: 50px;
+}
+#mainNav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 90%;
+    padding:0;
+}
+.logo {
+    margin: 20px;
+    width: 90px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.containerGrid {
+    Display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "hero intro intro " 
+    
+}
+
+.hero {
+    width: 400px;
+    padding-left: 50px;
+    grid-area: hero;
+
+}
+
+.intro {
+    width: 600px;
+    margin: 0px;
+   grid-area:intro;
+}
+
+.linkCards {
+    Display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "DoT VayCash" 
+}
+.DoT {
+    height:300px;
+    width: 650px;
+    margin-left:100px;
+    padding-left:25px;
+    padding-right:25px;
+    grid-area: DoT;
+    border: black 1px;
+    border-style: solid;
+}
+.VayCash {
+    height:300px;
+    width: 650px;
+    margin-right:100px;
+    padding-left:25px;
+    grid-area: VayCash;
+    border: black 1px;
+    border-style: solid;
+}
+.VClogo{
+    float:right;
+}
+.DoTlogo {
+    float: right;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+footer {
+    background-color: #6D6C57;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
+    margin: 0px;
+}
+.footLogo {
+    height: 93px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: #7D8E90;
+        height: 134px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    header li {
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    header ul {
+        padding-right: 0px;
+    }
+    #mainNav {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    
+    }
+    .containerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 200px;
+        grid-template-areas: 
+        "hero"
+        "intro"
+    }
+    .hero {
+        width: 400px;
+        grid-area: hero;
+        padding-left: 0px;
+    
+    }
+    
+    .intro {
+        width: 300px;
+        margin: 0px;
+       grid-area:intro;
+    }
+    .linkCards {
+        Display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 550px;
+        grid-template-areas:
+        "DoT" 
+        "VayCash"
+    }
+    .DoT {
+        height:100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: black 1px;
+        border-style: solid;
+        margin:0px;
+        padding:0px;
+        padding-bottom: 10px;;
+    }
+    .DoTlogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        
+    }
+    .VayCash {
+        height:100%;
+        width: 100%;
+        grid-area: VayCash;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: black 1px;
+        border-style: solid;
+        margin:0px;
+        padding:0px;  
+    }
